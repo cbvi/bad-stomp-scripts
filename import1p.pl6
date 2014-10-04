@@ -5,6 +5,15 @@ use Stomp::Utils;
 use Stomp::Key;
 use Stomp::Data;
 
+=begin DANGER
+
+1Password appears to export with some fields missing for some entries, no
+attempt has been made to handle this in this script
+
+use as your own risk
+
+=end DANGER
+
 if not @*ARGS {
     say "No filename specified";
     exit(0);
